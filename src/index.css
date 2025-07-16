@@ -13,30 +13,30 @@ body {
 }
 
 @font-face {
-    font-family: Karla-Bold;
-    /*src: url("../src/assets/fonts/static/Karla-Bold.ttf") ;*/
+    font-family: Roboto-Bold;
+    src: url("../src/assets/fonts/Roboto-Bold.ttf") ;
 }
 
 @font-face {
-    font-family: Karla-Regular;
-    /*src: url("./assets/fonts/static/Karla-Regular.ttf") ;*/
+    font-family: Roboto-Regular;
+    src: url("./assets/fonts/Roboto-Regular.ttf") ;
 }
 
 @theme{
-    --font-karla-bold: Karla-Bold, "sans-serif";
-    --font-karla-Regular: Karla-Regular, "sans-serif";
+    --font-karla-bold: Roboto-Bold, "sans-serif";
+    --font-karla-Regular: Roboto-Regular, "sans-serif";
 
-    --color-Green-200: hsl(148, 38%, 91%);
-    --color-Green-600: hsl(169, 82%, 27%);
-    --color-Red: hsl(0, 66%, 54%);
+    --color-Red: hsl(4, 100%, 67%);
+    --color-Blue-800: hsl(234, 29%, 20%);
+    --color-Blue-700: hsl(235, 18%, 26%);
+    --color-Grey: hsl(0, 0%, 58%);
     --color-White: hsl(0, 0%, 100%);
-    --color-Grey-500: hsl(186, 15%, 59%);
-    --color-Grey-900: hsl(187, 24%, 22%);
+
 
     /*--breakpoint-sm: 375px;*/
     --breakpoint-2xl: 1440px;
-    --text-base: 1rem;
-    --text-sm: 1.15rem;
+    /*--text-base: 1rem;*/
+    /*--text-sm: 1.15rem;*/
 
 }
 @layer base {
