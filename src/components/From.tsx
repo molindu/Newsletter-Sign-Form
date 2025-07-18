@@ -47,16 +47,18 @@ const From = () => {
                     <label htmlFor="email">Email address</label>
                     {errors.email && <span>{errors.email.message}</span>}
                 </div>
-                <div className={`input-container ${errors.email && 'input-error'}`}>
+                <div className={`input-container`}>
                     <input
                         type="email"
                         placeholder={'email@company.com'}
                         {...register("email")}
+                        className={`${errors.email && 'border border-Red text-Red bg-Red/10'}`}
+                        // className={'border border-Red text-Red bg-Red/10'}
                     />
                 </div>
             </div>
             <div>
-                <button className={'submit-btn'} type={'submit'}>
+                <button className={'submit-btn hover:shadow-button-gradient'} type={'submit'}>
                     Subscribe to monthly newsletter
                 </button>
             </div>
@@ -66,7 +68,8 @@ const From = () => {
                         <img src={SuccessIcon} alt="Success Icon" className={'w-12'}/>
                         <h1>Thanks for subscribing!</h1>
                         <div>
-                            A confirmation email has been sent to <strong>{submittedEmail}</strong> . Please open it and click the button inside to
+                            A confirmation email has been sent to <strong>{submittedEmail}</strong> . Please open it and
+                            click the button inside to
                             confirm your subscription.
                         </div>
                         <button className={'submit-btn'} onClick={clearAll}>
