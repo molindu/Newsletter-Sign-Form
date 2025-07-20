@@ -57,8 +57,14 @@ const From = () => {
                     />
                 </div>
             </div>
-            <div>
-                <button className={'submit-btn hover:shadow-button-gradient'} type={'submit'}>
+
+            <div className={'relative group'}>
+                <div
+                    className={'absolute -inset-2 top-4 rounded-lg bg-gradient-to-r from-Rose to-Orange opacity-0 blur-lg group-hover:opacity-75'}>
+                </div>
+                <button
+                    className={'submit-btn relative  group-hover:bg-gradient-to-r group-hover:from-Rose group-hover:to-Orange group-hover:text-white group-hover:py-3 group-hover:px-6 group-hover:cursor-pointer'}
+                    type={'submit'}>
                     Subscribe to monthly newsletter
                 </button>
             </div>
@@ -72,9 +78,16 @@ const From = () => {
                             click the button inside to
                             confirm your subscription.
                         </div>
-                        <button className={'submit-btn'} onClick={clearAll}>
-                            Dismiss message
-                        </button>
+                        <div className={'relative group'}>
+                            <div
+                                className={'absolute -inset-2 top-4 rounded-lg bg-gradient-to-r from-Rose to-Orange opacity-0 blur-lg group-hover:opacity-75'}>
+                            </div>
+                            <button
+                                className={'submit-btn relative  group-hover:bg-gradient-to-r group-hover:from-Rose group-hover:to-Orange group-hover:text-white group-hover:py-3 group-hover:px-6 group-hover:cursor-pointer'}
+                                onClick={clearAll}>
+                                Subscribe to monthly newsletter
+                            </button>
+                        </div>
                     </div>
                 </div>
             )}

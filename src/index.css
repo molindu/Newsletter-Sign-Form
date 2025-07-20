@@ -100,16 +100,16 @@ body {
         font-Roboto-Regular gap-3 items-center justify-center
     }
 
-    .submit-btn:hover {
-        @apply relative bg-gradient-to-r from-Rose to-Orange text-white py-3 px-6 cursor-pointer
-        before:absolute
-        before:inset-0
-        before:bg-gradient-to-r
-        before:from-Rose
-        before:to-Red
-        before:blur-xl
-        before:translate-y-4;
-    }
+    /*.submit-btn:hover {*/
+    /*    @apply relative bg-gradient-to-r from-Rose to-Orange text-white py-3 px-6 cursor-pointer*/
+    /*    !*before:absolute*!*/
+    /*    !*before:inset-0*!*/
+    /*    !*before:bg-gradient-to-r*!*/
+    /*    !*before:from-Rose*!*/
+    /*    !*before:to-Red*!*/
+    /*    !*before:blur-xl*!*/
+    /*    !*before:translate-y-4;*!*/
+    /*}*/
 
     .item-card-image {
         @apply w-full h-auto;
