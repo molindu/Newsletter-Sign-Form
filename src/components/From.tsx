@@ -85,7 +85,7 @@ const From = () => {
                             <button
                                 className={'submit-btn relative  group-hover:bg-gradient-to-r group-hover:from-Rose group-hover:to-Orange group-hover:text-white group-hover:py-3 group-hover:px-6 group-hover:cursor-pointer'}
                                 onClick={clearAll}>
-                                Subscribe to monthly newsletter
+                                Dismiss message
                             </button>
                         </div>
                     </div>
